@@ -11,40 +11,44 @@
 // Note: For 4 or more names, the number in "and 2 others" simply increases.
 
 //Solution 1
-function likes(names){
+function like(names){
     console.log(names.length - 2)
     if (names.length === 0){
-        return "no one likes this"
+        return  "no one likes this"
     }
     else if (names.length === 1){
-        return names[0] + " likes this"
+        return  names[0] + " likes this"
     }
     else if(names.length === 2){
-        return names[0] + " and " + names[1] + " like this"
+        return  names[0] + " and " + names[1] + " like this"
     }
     else if(names.length === 3){
-        return names[0] + ", " + names[1] + " and " + names[2] + " like this"
+        return  names[0] + ", " + names[1] + " and " + names[2] + " like this"
     }
     else {
-        return names[0] + ", " + names[1] + " and " + (names.length-2) + " others like this"
+        return  names[0] + ", " + names[1] + " and " + (names.length-2) + " others like this"
     }
 }
 
-console.log(likes(["1","2","3","4"]))
+console.log(like(["1","2","3","4"]))
 
 //Solution 2
 function like(name){
     switch (name.length){
-        case 0: return "no one likes this";
+        case 0: return  "no one likes this";
             break;
-        case 1: return name[0] + " likes this"
+        case 1: return  name[0] + " likes this"
             break;
-        case 2: return name[0] + " and " + name[1] + " like this"
+        case 2: return  name[0] + " and " + name[1] + " like this"
             break;
-        case 3: return name[0] + ", " + name[1] + " and " + name[2] + " like this"
+        case 3: return  name[0] + ", " + name[1] + " and " + name[2] + " like this"
             break;
-        default: return name[0] + ", " + name[1] + " and " + (name.length-2) + " others like this"
+        default: return  name[0] + ", " + name[1] + " and " + (name.length-2) + " others like this"
     }
 }
 
+
 console.log(like(['A', 'B', 'C', 'B', 'C']))
+
+
+

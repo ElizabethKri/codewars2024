@@ -3,3 +3,6 @@ function removeUrlAnchor(url){
 }
 
 console.log(removeUrlAnchor("www.codewars.com#about"))
+
+
+
